@@ -1,0 +1,9 @@
+SELECT 
+    macongty,
+    tencongty,
+    tengiaodich,
+    diachi,
+    dienthoai,
+    fax,
+    email
+FROM NHACUNGCAP;
