@@ -1,0 +1,5 @@
+SELECT username, fname, lname, started_on
+FROM Instructor
+WHERE STR_TO_DATE(started_on, '%Y-%m-%d')
+      >= DATE(CONCAT(YEAR(CURDATE()) - 20, '-01-01'))
+ORDER BY started_on;
