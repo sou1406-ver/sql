@@ -1,4 +1,4 @@
-SELECT 
-    title, 
-    LENGTH(title) AS LENGTH
-FROM Class;
+select 
+  title,
+  length(title) as LENGTH
+from Class;
