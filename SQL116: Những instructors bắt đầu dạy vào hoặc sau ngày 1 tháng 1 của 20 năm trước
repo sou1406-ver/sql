@@ -4,4 +4,4 @@ select
   lname, 
   started_on
 from Instructor
-where year(started_on) >= year(current_time)-20;
+where year(started_on) >= year(current_date)-20;
