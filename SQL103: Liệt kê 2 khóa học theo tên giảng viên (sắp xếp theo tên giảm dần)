@@ -1,6 +1,9 @@
-SELECT t.username, t.dept, t.number
-FROM Teaches t
-JOIN Instructor i
-  ON t.username = i.username
-ORDER BY i.lname DESC, t.number
-LIMIT 2;
+select 
+  t.username,
+  t.dept,
+  t.number
+from Teaches t
+join Instructor i
+on i.username= t.username
+order by i.lname desc, t.number
+limit 2;
