@@ -1,7 +1,7 @@
-SELECT 
-    username,
-    fname,
-    lname,
-    started_on
-FROM Instructor
-WHERE started_on < CURRENT_DATE;
+select 
+  username,
+  fname,
+  lname, 
+  started_on
+from Instructor
+where started_on < current_date;
