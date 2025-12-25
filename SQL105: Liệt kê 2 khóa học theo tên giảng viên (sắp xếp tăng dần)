@@ -1,13 +1,10 @@
-SELECT 
-       i.username,
-       c.dept,
-       c.number,
-       c.title
-FROM Instructor i
-JOIN Teaches t 
-  ON i.username = t.username
-JOIN Class c 
-  ON t.dept = c.dept 
- AND t.number = c.number
-ORDER BY i.lname ASC, i.fname ASC
-LIMIT 2;
+select 
+  t.username,
+  t.dept,
+  t.number,
+  c.title
+from Teaches t
+join Class c
+on t.dept=c.dept and t.number=c.number
+order by t.username asc
+limit 2;
