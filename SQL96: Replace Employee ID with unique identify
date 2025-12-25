@@ -1,4 +1,6 @@
-SELECT e.unique_id, em.name
-FROM Employees em
-LEFT JOIN EmployeeUNI e
-  ON em.id = e.id;
+select 
+  eu.unique_id,
+  e.name
+from Employees e
+left join EmployeeUNI eu
+on e.id=eu.id;
